@@ -1,0 +1,20 @@
+h1 {
+    height: 77px;
+    width: 419px;
+    left: 308px;
+    top: 1060px;
+}
+/* .voyage{
+    position: fixed;
+} */
+.appCard{
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+}
+app-cards{
+    position: relative;
+}
+.app{
+    justify-content: space-between;
+}

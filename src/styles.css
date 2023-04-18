@@ -1,1 +1,79 @@
 /* You can add global styles to this file, and also import other style files */
+/* ------ CSS Global ------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    /* Les images vont toujours faire la taille importé, si elle ne peuvent plus, elles s'adaptent à la fenêtre*/
+    display: block;
+    /* car images hybrides entre block et inline*/
+}
+
+:root {
+    /* variables*/
+    --color-corail: #C96B41;
+    --color-white: #FFFFFF;
+    --color-dark: #000000;
+    --color-beige:#EEDFD4;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family:'Lora', serif;;
+    overflow-x: hidden;
+}
+app-root{
+    display: flex;
+}
+/* on met des borders aux boites qu'on efface ensuite pour voir où se placent les sections */
+
+
+
+.flex {
+    /* clesse globale pour metrre en flex, à ajouter dans le html*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* ----- FONTS ------- */
+h1{
+    font-size: clamp(28px,3vw,40px);
+}
+
+h2{
+    font-size: clamp(22px,3vw,30px);
+}
+h3{
+    font-size: clamp(15px,3vw,18px);
+}
+
+p{
+    font-size: clamp(13px,3vw,15px);
+    
+}
+
+
+
+
+/* MAIN  */
+
+main {
+    width: min(1195px, 90%);
+    margin: 50px auto 100px;
+    /* le auto le centre */
+}
