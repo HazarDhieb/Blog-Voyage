@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { CardsComponent } from 'src/app/components/cards/cards.component';
+import { ARTICLE, Article } from 'src/app/mocks/article.mock';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  
+ public cards=ARTICLE;
+   article!:Article;
 }

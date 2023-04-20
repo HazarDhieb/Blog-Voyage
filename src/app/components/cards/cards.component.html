@@ -1,18 +1,19 @@
 <article class="flex ">
     <div class="card flex">
         <a routerLink="/articles/"><img src="assets/Tunis.png" alt="photo de la tunisie"></a>
-        <div class="detail flex column">
-            <div class="flex culumn">
-                <p>Tunisie<p>
-                 <p>Tunis</p>
+        <div class="detail flex">
+            <!-- <div>{{cards | json}} -->
+            <div class=" detailDate flex">
+                <div class="flex column">
+                    <p>Tunisie</p>
+                    <p>Tunis</p>
+                </div>
+                <!-- <hr> -->
+                <div class=" datecomp flex column">
+                    <p>Du 14.04.22</p>
+                    <p> au 17.05.22</p>
+                </div>
             </div>
-           
-            <hr>
-            <div class="flex culumn">
-                <p>Du 14.04.22</p>
-              <p>  au 17.05.22</p>
-            </div>
-            
         </div>
     </div>
-    </article>
+</article>

@@ -4,17 +4,40 @@ h1 {
     left: 308px;
     top: 1060px;
 }
+
 /* .voyage{
     position: fixed;
 } */
-.appCard{
+.appCard {
     width: max-content;
     display: grid;
-    grid-template-columns: repeat(2,2fr);
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
 }
-app-cards{
+
+app-cards {
     position: relative;
 }
-.app{
+
+.app {
     justify-content: space-between;
+}
+
+@media (max-width: 640px) {
+
+    /* CSS mobile ici */
+    main {
+        width: 390px;
+        height: 2338px;
+    }
+
+    img {
+        height: 283px;
+        width: 350px;
+    }
+
+    .appCard {
+        display: flex;
+        flex-direction: column;
+    }
 }

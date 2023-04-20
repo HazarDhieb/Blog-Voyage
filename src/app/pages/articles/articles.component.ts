@@ -12,7 +12,7 @@ export class ArticlesComponent {
 
   constructor(private activatedRoute: ActivatedRoute,
     private router: Router,
-    private location: Location
+    
   ) { }
   ngOnInit() {
     this.getArticle();
@@ -24,6 +24,7 @@ export class ArticlesComponent {
   getArticle() {
     const id = Number(this.activatedRoute.snapshot.paramMap.get("id"));
     const foundArticle  = this.articles.find((article) => article.id === id);
+    console.log('foundArticle',foundArticle);
     if (foundArticle) {
       this.article = foundArticle;
     }
@@ -32,4 +33,6 @@ export class ArticlesComponent {
     }
 
   }
+  // dateBG=this.article.dateBegin.toLocaleDateString(undefined, { timeZone: 'UTC' });
+
  }

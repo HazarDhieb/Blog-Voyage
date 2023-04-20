@@ -10,7 +10,7 @@
    
 }
 hr{
-    height: 100%;
+    height: 58px;
     margin-right: -468px;
     border: solid 0.5px white;
 }
@@ -18,12 +18,31 @@ hr{
     background-color: var(--color-corail);
     opacity: 0.8;
     position: absolute;
-    left: 15%;
-    right: 6.5%;
-    top: 97.65%;
-    bottom: -7.7%;
+    left: 0%;
+    right: 10%;
+    top: 85.65%;
+    bottom: -0.7%;
+}
+.detailDate{
+    justify-content: space-around;
 }
 .detail p{
     font-size: 21px;
     color: var(--color-white);
+}
+.datecomp{
+    margin-left: 249px;
+}
+@media (max-width: 640px) {
+
+    /* CSS mobile ici */
+
+img {
+    height: min-content;
+    height: 283px;
+    width: 350px;
+}
+.datecomp{
+margin-left: 223px;
+}
 }

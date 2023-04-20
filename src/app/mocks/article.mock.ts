@@ -3,8 +3,8 @@ export interface Article {
     id: number;
     country: string;
     city: string;
-    dateBegin: Date;
-    dateEnd: Date;
+    dateBegin: string;
+    dateEnd: string;
     picture: string;
     secondaryPicture: string[];
     positifPoint: string[];
@@ -21,10 +21,10 @@ export const ARTICLE: Article[] = [
         id: 1,
         country: 'Grèce',
         city: 'Athène',
-        dateBegin: new Date,
-        dateEnd: new Date,
-        picture: 'asserts/Athène.png',
-        secondaryPicture: ['asserts/Tunis.png', 'asserts/Eljem.png', 'asserts/Meterrico.png', 'asserts/Guatemala.png'],
+        dateBegin:"Du 14.04.22",
+        dateEnd: " au 17.05.22 ",
+        picture: 'assets/Athène.png',
+        secondaryPicture: ['assets/Tunis.png', 'assets/Eljem.png', 'assets/Meterrico.png', 'assets/Guatemala.png'],
         positifPoint: [`Un pays très simple à sillonner`, 'sans embrouilles ni complexité Des habitants gentils',
             'spontanés et qui cherchent le contact Un relief vallonné', 'offrant de superbes paysages dotés de villages pittoresques'],
         advice: ['Prenez une paire de tong !'],

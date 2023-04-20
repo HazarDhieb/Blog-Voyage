@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { ARTICLE, Article } from 'src/app/mocks/article.mock';
 
 @Component({
   selector: 'app-cards',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./cards.component.css']
 })
 export class CardsComponent {
-
+ @Input() cards!:Article[];
+  
 }

@@ -10,21 +10,42 @@
     left: 8px;
     right: -0.78%;
 }
-hr{
+
+hr {
     height: 100%;
     margin-right: -468px;
     border: solid 0.5px white;
 }
+
 .detail {
     background-color: var(--color-corail);
     opacity: 0.8;
     position: absolute;
-    left: 15%;
-    right: 6.5%;
-    top: 97.65%;
-    bottom: -7.7%;
+    left: 17%;
+    right: 9.5%;
+    top: 105.65%;
+    bottom: -14.7%;
 }
-.detail p{
+
+.detail p {
     font-size: 21px;
     color: var(--color-white);
+}
+
+@media (max-width: 640px) {
+
+    /* CSS mobile ici */
+
+    .card img {
+        height: 359px;
+        bottom: 30px;
+        /* height: min-content; */
+    }
+
+    .detail {
+        left: 24%;
+        right: -32.5%;
+        top: 67.65%;
+        bottom: 24.3%;
+    }
 }
