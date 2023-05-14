@@ -1,26 +1,17 @@
 .navbar {
-    padding-top: 100px;
+    padding-top: 40px;
     background-color: var(--color-beige);
     width: 80px;
-    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
 
 }
 
-.navbar ul {
-    height: 1466px;
-
-}
-
-.bord {
+/* .bord {
     height: 200px;
 
-}
+} */
 
-/*hr{
-    width: 80px;
-    margin-top: 226px;
-    border-top: 1px solid black;
-}*/
 .carnet {
     border-block-start-width: 4px;
     border-block-start-color: black;
@@ -28,6 +19,7 @@
 }
 
 .temp {
+    padding-bottom: 25px;
     border-block-start-width: thick;
     writing-mode: vertical-rl;
 }
@@ -37,8 +29,6 @@ li {
     list-style: none;
     font-weight: 400;
     font-size: 16px;
-    /* line-height: 19px;
-    writing-mode: vertical-lr;*/
     transform: rotate(-180deg);
 
 }
@@ -47,26 +37,31 @@ li {
 
     /* CSS mobile ici */
     .navbar {
-       
-        height: 50px;
-        width: 572px;
+        padding: 20px;
+        padding-top: 0;
+        height: 10vh;
+        width: max-content;
+        flex-direction: unset;
     }
 
     .navbar ul {
-        height: 90px;
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: column;
         transform: rotate(180deg);
-
-    }
-   
+        align-items: center;
+   }
+    a {
+        font-size: 16px;
+}
 
     .carnet {
-       
-        writing-mode: unset; 
+
+        writing-mode: unset;
         margin-left: 193px;
-       }
-        .temp {
-            writing-mode: unset;
-        }
+    }
+
+    .temp {
+        padding-bottom: 0;
+        writing-mode: unset;
+    }
 }

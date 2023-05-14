@@ -1,18 +1,15 @@
 h1 {
-    height: 77px;
-    width: 419px;
-    left: 308px;
-    top: 1060px;
+    font-size: 60px;
+    padding-bottom: 30px;
+    padding-top: 111px;
 }
 
-/* .voyage{
-    position: fixed;
-} */
+
 .appCard {
     width: max-content;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    gap: 20px;
+    grid-template-columns: 60px 60px;
+   
 }
 
 app-cards {
@@ -27,14 +24,14 @@ app-cards {
 
     /* CSS mobile ici */
     main {
-        width: 390px;
-        height: 2338px;
+        width: max-content;
     }
-
-    img {
-        height: 283px;
-        width: 350px;
+    h1{
+        font-size: 25px;
+        padding-top: 73px;
+        padding-bottom: 20px;
     }
+    
 
     .appCard {
         display: flex;

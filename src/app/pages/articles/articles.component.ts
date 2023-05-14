@@ -8,8 +8,6 @@ import { ARTICLE, Article } from 'src/app/mocks/article.mock';
   styleUrls: ['./articles.component.css']
 })
 export class ArticlesComponent {
-
-
   constructor(private activatedRoute: ActivatedRoute,
     private router: Router,
     
@@ -33,6 +31,4 @@ export class ArticlesComponent {
     }
 
   }
-  // dateBG=this.article.dateBegin.toLocaleDateString(undefined, { timeZone: 'UTC' });
-
  }

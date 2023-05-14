@@ -9,7 +9,10 @@ import { ARTICLE, Article } from 'src/app/mocks/article.mock';
 })
 export class HomeComponent {
 
-  
- public cards=ARTICLE;
+ /* voyageDeactive:Article[]=ARTICLE;/*le variable elle contient un tab de voyage de type respectant l'interf ARTICLE*/
    article!:Article;
+   
+
+   voyageAdecouvrir = ARTICLE.filter((article : Article) => article.isActive === false);
+
 }

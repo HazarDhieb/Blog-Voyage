@@ -1,12 +1,10 @@
-<article class="flex ">
-<div class="card flex">
-    <!-- <a routerLink="/articles"><img src="{{article.picture}}" alt="photo de pays"></a> -->
-    <a routerLink="/articles"><img src="assets/Guatemala.png" alt="photo de pays"></a>
-
+<article *ngFor="let voyage of voyageActive" class="flex ">
+<div routerLink="/article/{{voyage.id}}" class="card flex" >
+    <img src="{{voyage.picture}}" alt="{{voyage.country}}">
     <div class="detail flex ">
-        <p >Albanie - Tirana</p>
-        <hr>
-        <p>14.04.22 · 17.05.22</p>
+        <p >{{voyage.country}}</p>
+        <!-- <hr> -->
+        <p>{{voyage.dateBegin}}· {{voyage.dateEnd}}</p>
     </div>
 </div>
 </article>

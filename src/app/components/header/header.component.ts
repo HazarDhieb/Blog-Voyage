@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { WeatherService,Location } from 'src/app/services/service/weather.service';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+city!: Location;
+constructor(private weatherService:WeatherService){}
+ngOnInit(){
+  this.weatherService.getLocation().subscribe((city)=>{
+    this.city=city;
+  });
+}
+
 
 }

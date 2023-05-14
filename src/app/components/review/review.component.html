@@ -1,1 +1,21 @@
-<p>review works!</p>
+<h2>Notre avis</h2>
+<section>
+    <h3 class="style">Les plus</h3>
+    <div class="positif">
+        <ul *ngFor="let item of positif">
+            <li>{{item}}</li>
+        </ul>
+    </div>
+    <h3 class="style">Les moins</h3>
+    <div class="negatif">
+        <ul *ngFor="let item of negatif">
+            <li>{{item}}</li>
+        </ul>
+    </div>
+    <h3 class="style">Mon conseil</h3>
+    <div class="advice">
+        <ul *ngFor="let item of advice">
+            <li>{{item}}</li>
+        </ul>
+    </div>
+</section>

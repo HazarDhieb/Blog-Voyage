@@ -69,9 +69,10 @@ p{
 /* MAIN  */
 
 main {
-    width: min(1195px, 90%);
-    margin: 50px auto 100px;
+    /* width: min(1195px, 90%);
+    margin: 20px auto 0; */
     /* le auto le centre */
+    margin: 40px;
 }
 @media (max-width: 640px) {
 

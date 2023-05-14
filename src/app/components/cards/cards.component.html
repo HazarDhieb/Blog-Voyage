@@ -1,19 +1,17 @@
-<article class="flex ">
-    <div class="card flex">
-        <a routerLink="/articles/"><img src="assets/Tunis.png" alt="photo de la tunisie"></a>
-        <div class="detail flex">
-            <!-- <div>{{cards | json}} -->
+    <article *ngFor="let voyage of voyageAdecouvrir" class="flex">
+        <a routerLink="/article/{{voyage.id}}"  class="card flex">
+        <img src="{{voyage.picture}}" alt="{{voyage.country}}">
             <div class=" detailDate flex">
                 <div class="flex column">
-                    <p>Tunisie</p>
-                    <p>Tunis</p>
+                    <p>{{voyage.country}}</p>
+                    <p>{{voyage.city}}</p>
                 </div>
                 <!-- <hr> -->
                 <div class=" datecomp flex column">
-                    <p>Du 14.04.22</p>
-                    <p> au 17.05.22</p>
+                    <p>{{voyage.dateBegin}}</p>
+                    <p> {{voyage.dateEnd}}</p>
                 </div>
             </div>
-        </div>
-    </div>
-</article>
+        </a>
+    </article>
+   

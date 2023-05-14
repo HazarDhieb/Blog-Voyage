@@ -18,6 +18,7 @@ export class CardVoyageComponent {
   }
   articles: Article[] = ARTICLE;
   article!: Article;
+  voyageActive = ARTICLE.filter((article : Article) => article.isActive === true);
 
   getArticle() {
     const id = Number(this.activatedRoute.snapshot.paramMap.get("id"));

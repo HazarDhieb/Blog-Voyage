@@ -1,9 +1,31 @@
-h3{
-font-family: Lora;
-font-size: 60px;
-font-weight: 400;
-line-height: 77px;
-letter-spacing: 0em;
-text-align: left;
+h1 {
+    font-family: Lora;
+    font-size: 60px;
+    font-weight: 400;
+  
+}
 
+img {
+    padding-top: 37px;
+    width: 70vw;
+    height: 64vh;
+
+}
+
+@media (max-width: 640px) {
+
+    /* CSS mobile ici */
+    main {
+        /* margin:0; */
+        /* width: 390px; */
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        font-size: 24px;
+    padding-top: 91px;}
+    img {
+        height: 283px;
+        width: 350px;
+    }
 }

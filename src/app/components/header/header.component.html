@@ -1,8 +1,10 @@
 <nav class="navbar flex">
-    <ul >
-    <li class="carnet"><a routerLink="">Carnet de voyages</a></li>
-    <div class="bord"></div>
-    <li class="temp">Tirana
-        ☀️ 31°C</li>
-</ul>
+    <ul>
+        <li class="carnet"><a routerLink="">Carnet de voyages</a></li></ul>
+        <!-- <div class="bord"></div> -->
+        <ul class="temp">
+            <li>☀️{{city.currentConditions.temp}} C°</li>
+            <li>{{city.address}}</li>
+       
+    </ul>
 </nav>

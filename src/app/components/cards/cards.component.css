@@ -1,32 +1,26 @@
 .card {
     align-items: flex-end;
-
 }
-
-.card img {
+img {
     position: relative;
-    height: 400px;
-    width: min(500px, 90%);
-   
+    height: 50vh;
+    width: 40vw;
+  }
+a{
+    padding-bottom: 48px;
+
 }
-hr{
-    height: 58px;
-    margin-right: -468px;
-    border: solid 0.5px white;
-}
-.detail {
+.detailDate {
+    justify-content: space-around;
+    font-size: 20px;
     background-color: var(--color-corail);
     opacity: 0.8;
+    right: 0px;
+    left: 0px;
     position: absolute;
-    left: 0%;
-    right: 10%;
-    top: 85.65%;
-    bottom: -0.7%;
+    
 }
-.detailDate{
-    justify-content: space-around;
-}
-.detail p{
+.detailDate p{
     font-size: 21px;
     color: var(--color-white);
 }
@@ -37,12 +31,27 @@ hr{
 
     /* CSS mobile ici */
 
-img {
-    height: min-content;
-    height: 283px;
-    width: 350px;
+    .card img {
+        width: min(406px, 90%);
+        top: 56px;
+    }
+
+    .detail {
+        left: 18px;
+        right: 26px;
+        top: 373px;
+        bottom: 287px;
+
+    }
+.articl{
+    flex-direction: column;
+    gap:20px;
 }
-.datecomp{
-margin-left: 223px;
+.detailDate p{
+    font-size: 13px;
 }
+/* .detailDate{
+    right:150px;
+} */
+
 }

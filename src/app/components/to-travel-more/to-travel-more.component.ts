@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ARTICLE, Article } from 'src/app/mocks/article.mock';
 
 @Component({
   selector: 'app-to-travel-more',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./to-travel-more.component.css']
 })
 export class ToTravelMoreComponent {
+  article!: Article;
+   toTravel = ARTICLE.filter((article : Article) => article.secondaryPicture);
 
 }

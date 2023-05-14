@@ -1,0 +1,32 @@
+h2 {
+    font-family: Lora;
+    font-weight: 400;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 24px;
+
+}
+li{
+    font-family: 'Inter';
+    font-weight: 400;
+}
+.style {
+    padding: 10px 10px;
+}
+
+.positif {
+    margin: 20px;
+}
+
+.negatif {
+    margin: 20px;
+}
+.advice{
+    margin: 20px;
+}

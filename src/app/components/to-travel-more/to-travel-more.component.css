@@ -1,0 +1,12 @@
+h3 {
+    padding-top: 90px;
+    font-family: 'Lora';
+    font-weight: 400;
+    font-size: 40px;
+}
+.grid img {
+    height: 320px;
+    width: 320px;
+    padding-bottom: 20px;
+   
+}

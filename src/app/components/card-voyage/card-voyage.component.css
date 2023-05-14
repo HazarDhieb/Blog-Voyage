@@ -5,26 +5,20 @@
 
 .card img {
     position: relative;
-    height: 686px;
-    width: 1029px;
-    left: 8px;
-    right: -0.78%;
-}
-
-hr {
-    height: 100%;
-    margin-right: -468px;
-    border: solid 0.5px white;
+    height: 81vh;
+    width: 500vw;
 }
 
 .detail {
+    font-size: 20px;
     background-color: var(--color-corail);
+    font-size: 15px;
     opacity: 0.8;
     position: absolute;
-    left: 17%;
-    right: 9.5%;
-    top: 105.65%;
-    bottom: -14.7%;
+    padding: 15px;
+    left: 159px;
+    right: 159px;
+    bottom: 93px;
 }
 
 .detail p {
@@ -34,18 +28,22 @@ hr {
 
 @media (max-width: 640px) {
 
-    /* CSS mobile ici */
+    /* CSS mobile ici*/
 
     .card img {
-        height: 359px;
-        bottom: 30px;
-        /* height: min-content; */
+
+        height: min-content;
+        width: min(406px, 90%);
+        top: 56px;
+        padding: 0;
+        right: 22px;
     }
 
     .detail {
-        left: 24%;
-        right: -32.5%;
-        top: 67.65%;
-        bottom: 24.3%;
+        left: 18px;
+        right: 18px;
+        top: 396px;
+        bottom: 313px;
+
     }
 }
